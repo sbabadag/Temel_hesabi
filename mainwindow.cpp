@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "occ_view.h"
+#include <QWidget>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

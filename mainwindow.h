@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "occ_view.h"
+#include <qwidget.h>
 
 namespace Ui {
 class MainWindow;

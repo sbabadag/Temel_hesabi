@@ -6,11 +6,13 @@
 #include <QMouseEvent>
 #include <QRubberBand>
 #include <QStyleFactory>
+#include <QWidget>
 
 #include <V3d_View.hxx>
 
 #include <Aspect_Handle.hxx>
 #include <Aspect_DisplayConnection.hxx>
+#include "MY_OCC_CLASSES.h"
 
 #ifdef WNT
     #include <WNT_Window.hxx>
@@ -98,6 +100,14 @@ void OccView::init()
     myView->TriedronDisplay(Aspect_TOTP_LEFT_LOWER, Quantity_NOC_GOLD, 0.08, V3d_ZBUFFER);
 
     myContext->SetDisplayMode(AIS_Shaded, Standard_True);
+
+ //   TopoDS_Shape IPE = MyExtrudeProfile(200,100,20,10,gp_Pnt(0,0,0),gp_Pnt(0,0,100));
+ //   auto AIS = new AIS_Shape(IPE);
+//    AIS->SetMaterial(Graphic3d_NOM_GOLD);
+//    AIS->SetColor(Quantity_Color(Quantity_NOC_GREEN));
+//    AIS->SetDisplayMode(AIS_WireFrame);
+//    mContext->Display(AIS,Standard_False);
+
 }
 
 const Handle(AIS_InteractiveContext)& OccView::getContext() const

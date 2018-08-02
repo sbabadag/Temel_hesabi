@@ -3,6 +3,7 @@
 #define _OCCVIEW_H_
 
 #include <QtOpenGL/QGLWidget>
+#include <QWidget>
 
 #include <AIS_InteractiveContext.hxx>
 
